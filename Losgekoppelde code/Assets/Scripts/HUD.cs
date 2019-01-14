@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HUD : MonoBehaviour {
 
+    private Inventory inventory;
+
     private List<string> inv;
 
     private void Start()
@@ -13,6 +15,8 @@ public class HUD : MonoBehaviour {
 
     void Update()
     {
+
+        inv = inventory.GetInv();
 
         Debug.Log(inv);
 
